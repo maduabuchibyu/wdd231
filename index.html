@@ -1,1 +1,83 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/style.css">
+
+  <!-- JavaScript -->
+  <script src="scripts/jave.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="logo">My Coding Pathway</div>
+    <nav class="navbar">
+      <button id="menu-toggle" aria-label="Toggle Menu">☰</button>
+      <ul id="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <h1>Welcome to My Learning Journey</h1>
+        <p>Follow along as I build my skills through the Web and Computer Programming Certificate program.</p>
+      </div>
+      <div class="hero-image">
+        <img src="images/profile.jpg" alt="Student ">
+      </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses-section">
+      <h2>Certificate Courses</h2>
+      <div class="filter-buttons">
+        <button id="all-btn">All Courses</button>
+        <button id="wdd-btn">WDD Courses</button>
+        <button id="cse-btn">CSE Courses</button>
+      </div>
+      <div id="course-container" class="course-container"></div>
+      <p id="total-credits">Total Credits: 0</p>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-section">
+      <h2>About Me</h2>
+      <p>My journey into computer programming began with a deep curiosity about how technology shapes our world. 
+      At first, coding seemed complex and intimidating — but as I learned more, I discovered that programming 
+      is not just about writing lines of code; it’s about solving problems, creating solutions, and bringing ideas to life.</p>
+
+      <p>Through my studies, I’ve developed skills in web development, Python programming, and software design. 
+      Each new concept — from basic syntax to building dynamic websites — has strengthened my ability to think 
+      logically and creatively. My goal is to become a skilled software developer who not only writes code but 
+      also creates meaningful digital experiences.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="otumaduabuchi93@gmail.com">otumaduabuchi93@gmail.com</a></p>
+      <p>Otu Maduabuchi Okah</p>
+      <p>Nigeia</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> | Otu Maduabuchi Okah</p>
+    <p>Last modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
